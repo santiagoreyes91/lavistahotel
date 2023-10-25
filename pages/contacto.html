@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+        <title>Hotel La Vista</title>
+    </head>
+    <body>
+        
+        <header class="header">
+            <div>
+                <h1 class="titulo-principal">Hotel ''La Vista''</h1>
+            </div>
+            <nav>
+                <ul class="menu-container">
+                    <li><a class="menu-link" href="../index.html">Inicio</a></li>
+                    <li><a class="menu-link" href="reservas.html">Reservas</a></li>
+                    <li><a class="menu-link" href="habitaciones.html">Habitaciones</a></li>
+                    <li><a class="menu-link" href="servicios.html">Servicios</a></li>
+                    <li><a class="menu-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="titulo-contacto">
+                <h2>Contacto</h2>
+                <h3>Envíe sus datos para subscribirse a nuestras mejores ofertas de estadía</h3>
+            </div>
+
+            <div class="container-formulario">
+                <form class="formulario" action="">
+
+                    <div class="completar-datos">
+                        <!--Completar datos-->
+                        <p>Nombre</p>
+                        <input type="text" placeholder="Nombre" required>
+        
+                        <p>Apellido</p>
+                        <input type="text" placeholder="Apellido" required>
+    
+                        <p>Telefono</p>
+                        <input type="text" placeholder="Telefono" required>
+        
+                        <p>E-mail</p>
+                        <input type="text" placeholder="e-mail" required>
+                    </div>
+    
+                    <div class="casillas-verificacion">
+                        <!--Casillas de verificacion-->
+                        <p class="subscribe-to">Subscribirse a:</p>
+    
+                        <label for="finde-box"><input id="finde-box" type="checkbox" name="area" checked>Ofertas de fin de semana</label> 
+                        <br>
+    
+                        <label for="semanales-box"><input id="semanales-box" type="checkbox" name="area">Ofertas semanales</label>
+                        <br>
+    
+                        <label for="quincena-box"><input id="quincena-box" type="checkbox" name="area">Ofertas por quincenas</label>
+                    </div>
+    
+                    <div class="botones-radio">
+                        <!--Botones de radio-->
+                        <p class="do-you-wish">Desea recibir notificaciones por e-mail?</p>
+                        <label for="Si"><input id="Si" type="radio" name="si-no" checked> Si</label>
+                        <label for="no"><input id="no" type="radio" name="si-no"> No</label>
+                        <br>
+        
+                        <button type="submit">Enviar datos</button>
+                    </div>
+                  </form>
+                  <img class="imagen-contacto" src="../images/hotel-con-piscina.jpg" alt="Imagen del Hotel">
+
+            </div>
+
+            <div class="info-hotel">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12712.109670346927!2d-56.15785893832132!3d-34.92775712134615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2suy!4v1696303723077!5m2!1ses!2suy" width="480" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="info-contacto">
+                    <p>La Vista Hotel</p>
+                    <br>
+                    <p>Rambla Gandhi, 1234, Montevideo, Uruguay</p>
+                    <br>
+                    <p>Tel +598 98 123 456</p>
+                    <br>
+                    <p>contacto@lavistahotel.com.uy</p>
+                </div>
+            </div>
+            
+        </main>
+
+
+        <footer class="footer">
+            <div class="container-logos">
+                <a href="https://facebook.com" target="_blank"><img class="logos-redes" src="../images/fb-logo.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img class="logos-redes" src="../images/ig-logo.png" alt="Instagram"></a>
+            </div>
+            
+            <p class="text-footer">Copywright 2023 - Santiago Reyes - Coderhouse</p>
+        </footer>
+        
+    </body>
+</html>

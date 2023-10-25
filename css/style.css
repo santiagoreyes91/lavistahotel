@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.titulo-principal {
+    font-family: 'Tangerine', cursive;
+    font-size: 90px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding: 0.5rem 6rem;
+    background-color: sandybrown;
+    color: white;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 2rem;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.menu-link {
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.container-portada {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.imagen-portada {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+}
+
+.hero-description {
+    margin-block: 1rem;
+    padding-inline: 18rem;
+    padding-block: 2rem;
+    background-color: sandybrown;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+
+.galeria {
+    background-color: white;
+    padding-block: 0.5rem;
+}
+
+.title-galeria{
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: sandybrown;
+    margin: 2rem;
+}
+
+.contenedor-galerias {
+    display: flex;
+    justify-content: center;
+}
+
+.foto-galeria {
+    width: 300px;
+    margin: 10px;
+}
+
+.container-reservas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: sandybrown;
+    font-size: 20px;
+    color: white;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.btn-reservas {
+    margin-block: 0.5rem;
+}
+
+.titulo-contacto {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 2rem;
+}
+
+.container-formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
+    background-color: sandybrown;
+    padding: 2rem;
+    margin-block: 2rem;
+}
+
+.subscribe-to, .do-you-wish {
+    color: black;
+}
+
+.completar-datos, .casillas-verificacion, .botones-radio {
+    padding: 0.7rem;
+}
+
+.imagen-contacto {
+    width: 600px;
+}
+
+.info-hotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.main-servicios {
+    background-color: darkslategrey;
+}
+
+.listado-servicios {
+    margin-block: 5rem;   
+}
+
+.title-servicios {
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.item-restaurant {
+    margin: 0rem 5rem 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: end;
+}
+
+.item-casino {
+    margin: 0rem 5rem 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    color: black;
+    font-size: 20px;
+    text-align: start;
+}
+
+.item-eventos {
+    margin: 0rem 5rem 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: end;
+}
+
+.item-spa {
+    margin: 0rem 5rem 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    color: black;
+    font-size: 20px;
+    text-align: start;
+}
+
+.img-servicios {
+    width: 300px;
+    height: 200px;
+}
+
+.container-rooms {
+    margin-block: 2rem;
+}
+
+.title-rooms {
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+.img-rooms {
+    width: 250px;
+    height: 200px;
+    margin: 1rem;
+}
+
+.single-rooms, .couple-rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: darkslategrey;
+    margin-bottom: 3rem;
+}
+
+.footer {
+    padding-block: 5rem;
+    background-color: darkgrey;
+}
+
+.logos-redes {
+    width: 35px;
+    height: 35px;
+}
+
+.container-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text-footer {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
