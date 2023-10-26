@@ -148,11 +148,24 @@ a {
 }
 
 .main-servicios {
-    background-color: darkslategrey;
+    background-color: none;
 }
 
-.listado-servicios {
-    margin-block: 5rem;   
+/* .listado-servicios {
+    margin: 5rem;   
+} */
+
+.contenedor-servicios {
+    border-style: solid;
+    border-width: 2px;
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "rest casino"
+    "rest spa"
+    "eventos piscina";
 }
 
 .title-servicios {
@@ -164,64 +177,85 @@ a {
 }
 
 .item-restaurant {
-    margin: 0rem 5rem 1.5rem;
-    padding: 2rem;
-    display: flex;
+    grid-area: rest;
+    margin: 0rem;
+    padding: 1rem;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: gray;
+    justify-content: space-between; */
+    background-color: silver;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: black;
-    color: white;
-    font-size: 20px;
-    text-align: end;
+    color: black;
+    font-size: 18px;
+    text-align: center;
 }
 
 .item-casino {
-    margin: 0rem 5rem 1.5rem;
-    padding: 2rem;
-    display: flex;
+    grid-area: casino;
+    margin: 0rem;
+    padding: 1rem;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
+    justify-content: space-between; */
+    background-color: silver;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: black;
     color: black;
-    font-size: 20px;
-    text-align: start;
+    font-size: 18px;
+    text-align: center;
 }
 
 .item-eventos {
-    margin: 0rem 5rem 1.5rem;
-    padding: 2rem;
-    display: flex;
+    grid-area: eventos;
+    margin: 0rem;
+    padding: 1rem;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: gray;
+    justify-content: space-between; */
+    background-color: silver;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: black;
-    color: white;
-    font-size: 20px;
-    text-align: end;
+    color: black;
+    font-size: 18px;
+    text-align: center;
 }
 
 .item-spa {
-    margin: 0rem 5rem 1.5rem;
-    padding: 2rem;
-    display: flex;
+    grid-area: spa;
+    margin: 0rem;
+    padding: 1rem;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
+    justify-content: space-between; */
+    background-color: silver;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: black;
     color: black;
-    font-size: 20px;
-    text-align: start;
+    font-size: 18px;
+    text-align: center;
 }
+
+.item-piscina {
+    grid-area: piscina;
+    margin: 0rem;
+    padding: 1rem;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    background-color: silver;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
 
 .img-servicios {
     width: 300px;
