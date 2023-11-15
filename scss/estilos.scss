@@ -11,6 +11,7 @@ body {
 .titulo-principal {
     font-family: 'Tangerine', cursive;
     font-size: 80px;
+    color: white;
     animation-name: aparecer;
     animation-duration: 4s;
 }
@@ -34,47 +35,46 @@ body {
     padding: 0.5rem 6rem;
     background-color: gray;
     color: white;
-}
 
-.menu-container {
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    gap: 2rem;
-    padding: 0.5rem;
-    list-style: none;
-    animation-name: aparecer-menu;
-    animation-duration: 6s;
-}
+    .menu-container {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        gap: 2rem;
+        padding: 0.5rem;
+        list-style: none;
+        animation-name: aparecer-menu;
+        animation-duration: 6s;
 
-@keyframes aparecer-menu {
-    0% {
-        opacity: 0;
+        .menu-link {
+            color: whitesmoke;
+        }
+
+        @keyframes aparecer-menu {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
-    100% {
-        opacity: 1;
-    }
-}
-
-.menu-link {
-    color: whitesmoke;
 }
 
 a {
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 .container-portada {
     display: flex;
     justify-content: center;
     margin: 3rem;
-}
 
-.imagen-portada {
-    display: flex;
-    justify-content: center;
-    width: 1000px;
+    .imagen-portada {
+        display: flex;
+        justify-content: center;
+        width: 1000px;
+    }
 }
 
 .hero-description {
@@ -91,30 +91,30 @@ a {
 .galeria {
     background-color: white;
     padding-block: 0.5rem;
-}
 
-.title-galeria{
-    font-family: 'Tangerine', cursive;
-    font-size: 50px;
-    text-align: center;
-    color: sandybrown;
-    margin: 2rem;
-}
+    .title-galeria{
+        font-family: 'Tangerine', cursive;
+        font-size: 10px;
+        text-align: center;
+        color: sandybrown;
+        margin: 2rem;
+    }
 
-.contenedor-galerias {
-    display: flex;
-    justify-content: center;
-}
+    .contenedor-galerias {
+        display: flex;
+        justify-content: center;
+    }
 
-.foto-galeria {
-    width: 220px;
-    margin: 10px;
-}
-
-.foto-galeria:hover {
-    transition: 400ms;
-    transform: scale(1.1);
-
+    .foto-galeria {
+        width: 220px;
+        margin: 10px;
+    }
+    
+    .foto-galeria:hover {
+        transition: 400ms;
+        transform: scale(1.1);
+    
+    }
 }
 
 .container-reservas {
@@ -126,10 +126,10 @@ a {
     color: white;
     margin: 2rem;
     padding: 2rem;
-}
 
-.btn-reservas {
-    margin-block: 0.5rem;
+    .btn-reservas {
+        margin-block: 0.5rem;
+    }
 }
 
 .titulo-contacto {

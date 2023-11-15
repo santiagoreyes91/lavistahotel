@@ -1,0 +1,396 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.titulo-principal {
+  font-family: "Tangerine", cursive;
+  font-size: 80px;
+  animation-name: aparecer;
+  animation-duration: 4s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  padding: 0.5rem 6rem;
+  background-color: gray;
+  color: white;
+}
+.header .menu-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 2rem;
+  padding: 0.5rem;
+  list-style: none;
+  animation-name: aparecer-menu;
+  animation-duration: 6s;
+}
+.header .menu-container .menu-link {
+  color: whitesmoke;
+}
+@keyframes aparecer-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-portada {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+.container-portada .imagen-portada {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+}
+
+.hero-description {
+  margin-block: 1rem;
+  padding-inline: 18rem;
+  padding-block: 2rem;
+  background-color: gray;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+
+.galeria {
+  background-color: white;
+  padding-block: 0.5rem;
+}
+.galeria .title-galeria {
+  font-family: "Tangerine", cursive;
+  font-size: 10px;
+  text-align: center;
+  color: sandybrown;
+  margin: 2rem;
+}
+.galeria .contenedor-galerias {
+  display: flex;
+  justify-content: center;
+}
+.galeria .foto-galeria {
+  width: 220px;
+  margin: 10px;
+}
+.galeria .foto-galeria:hover {
+  transition: 400ms;
+  transform: scale(1.1);
+}
+
+.container-reservas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: sandybrown;
+  font-size: 20px;
+  color: white;
+  margin: 2rem;
+  padding: 2rem;
+}
+.container-reservas .btn-reservas {
+  margin-block: 0.5rem;
+}
+
+.titulo-contacto {
+  font-family: "Tangerine", cursive;
+  font-size: 50px;
+  text-align: center;
+  margin: 2rem;
+}
+
+.container-formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-size: 20px;
+  background-color: sandybrown;
+  padding: 2rem;
+  margin-block: 2rem;
+}
+
+.subscribe-to, .do-you-wish {
+  color: black;
+}
+
+.completar-datos, .casillas-verificacion, .botones-radio {
+  padding: 0.7rem;
+}
+
+.imagen-contacto {
+  width: 600px;
+}
+
+.info-hotel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.main-servicios {
+  background-color: none;
+}
+
+.contenedor-servicios {
+  justify-content: start;
+  column-gap: 4px;
+  row-gap: 4px;
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "restau casino" "restau spa" "eventos piscina";
+}
+
+.title-servicios {
+  font-family: "Tangerine", cursive;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.img-servicios {
+  width: 250px;
+  height: 165px;
+}
+
+.item-restaurant {
+  grid-area: restau;
+  margin: 0rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  background-color: gray;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.item-casino {
+  grid-area: casino;
+  margin: 0rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  background-color: gray;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.item-eventos {
+  grid-area: eventos;
+  margin: 0rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  background-color: gray;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.item-spa {
+  grid-area: spa;
+  margin: 0rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  background-color: gray;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.item-piscina {
+  grid-area: piscina;
+  margin: 0rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  background-color: gray;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.item-servicio:hover {
+  transform: scale(1.1);
+}
+
+.container-rooms {
+  margin-block: 2rem;
+}
+
+.title-rooms {
+  font-family: "Tangerine", cursive;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+.img-rooms {
+  width: 250px;
+  height: 200px;
+  margin: 1rem;
+}
+
+.img-rooms:hover {
+  transition: 350ms;
+  transform: scale(1.5);
+}
+
+.single-rooms, .couple-rooms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: gray;
+  margin-bottom: 3rem;
+}
+
+.footer {
+  padding-block: 5rem;
+  background-color: darkgrey;
+}
+
+.logos-redes {
+  width: 35px;
+  height: 35px;
+}
+
+.container-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-footer {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  .header .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding: 0.5rem 6rem;
+    color: white;
+  }
+  .hero-description {
+    padding-inline: 5rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .menu-container {
+    gap: 1.5rem;
+  }
+  .menu-container a {
+    font-size: 20px;
+  }
+  .titulo-principal {
+    font-size: 95px;
+  }
+  .imagen-portada {
+    width: 400px;
+  }
+  .hero-description {
+    margin-block: 1rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+  }
+  .contenedor-galerias {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedor-servicios {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "restau" "casino" "spa" "eventos" "piscina";
+  }
+}
+@media screen and (max-width: 580px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 2rem 2rem;
+    background-color: gray;
+    color: white;
+  }
+  .titulo-principal {
+    font-size: 40px;
+  }
+  .menu-container {
+    gap: 0.5rem;
+  }
+  .menu-container a {
+    font-size: 16px;
+  }
+}
+.menu-container a:hover {
+  color: gold;
+  transform: scale(1.5); /*por qué no anda?*/
+  transition-duration: 100ms;
+}
+
+/*# sourceMappingURL=estilos.css.map */
