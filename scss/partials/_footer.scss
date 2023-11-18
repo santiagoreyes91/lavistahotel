@@ -1,0 +1,21 @@
+.footer {
+    padding-block: 5rem;
+    background-color: gray;
+
+    .container-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .logos-redes {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    
+    .text-footer {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+}

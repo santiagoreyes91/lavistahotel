@@ -1,0 +1,14 @@
+.container-reservas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: sandybrown;
+    font-size: 20px;
+    color: white;
+    margin: 2rem;
+    padding: 2rem;
+
+    .btn-reservas {
+        margin-block: 0.5rem;
+    }
+}

@@ -1,0 +1,28 @@
+.galeria {
+    background-color: white;
+    padding-block: 0.5rem;
+
+    .title-galeria{
+        font-family: 'Tangerine', cursive;
+        font-size: 65px;
+        text-align: center;
+        color: sandybrown;
+        margin: 2rem;
+    }
+
+    .contenedor-galerias {
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto-galeria {
+        width: 220px;
+        margin: 10px;
+    }
+    
+    .foto-galeria:hover {
+        transition: 400ms;
+        transform: scale(1.1);
+    
+    }
+}

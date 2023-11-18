@@ -1,0 +1,42 @@
+.container-formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
+    background-color: sandybrown;
+    padding: 2rem;
+    margin-block: 2rem;
+
+    .completar-datos, .casillas-verificacion, .botones-radio {
+        padding: 0.7rem;
+
+        .subscribe-to, .do-you-wish {
+            color: black;
+        }
+    }
+}
+
+.imagen-contacto {
+    width: 600px;
+}
+
+.titulo-contacto {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 2rem;
+}
+
+.info-hotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+
+    .info-contacto {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+}

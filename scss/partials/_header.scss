@@ -1,0 +1,41 @@
+.header {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding: 0.5rem 6rem;
+    background-color: $colorPrincipal;
+    color: white;
+
+    .menu-container {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        gap: 2rem;
+        padding: 0.5rem;
+        list-style: none;
+        animation-name: aparecer-menu;
+        animation-duration: 6s;
+
+        .menu-link {
+            color: whitesmoke;
+        }
+
+        .menu-container a:hover {
+            color: gold;
+            transform: scale(1.5); /*por qué no anda?*/
+            transition-duration: 100ms; 
+        }
+
+        @keyframes aparecer-menu {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}

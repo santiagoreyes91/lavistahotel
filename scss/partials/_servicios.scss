@@ -1,0 +1,109 @@
+.main-servicios {
+    background-color: none;
+
+    .contenedor-servicios {
+        justify-content: start;
+        column-gap: 4px;
+        row-gap: 4px;
+        margin: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "restau casino"
+        "restau spa"
+        "eventos piscina";
+    }
+
+    .title-servicios {
+        font-family: 'Tangerine', cursive;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .img-servicios {
+        width: 250px;
+        height: 165px;
+    }
+
+    .item-restaurant {
+        grid-area: restau;
+        margin: 0rem;
+        padding-inline: 3rem;
+        padding-block: 1rem;
+        background-color: $colorPrincipal;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    
+    .item-casino {
+        grid-area: casino;
+        margin: 0rem;
+        padding-inline: 3rem;
+        padding-block: 1rem;
+        background-color: $colorPrincipal;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    
+    .item-eventos {
+        grid-area: eventos;
+        margin: 0rem;
+        padding-inline: 3rem;
+        padding-block: 1rem;
+        background-color: $colorPrincipal;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    
+    .item-spa {
+        grid-area: spa;
+        margin: 0rem;
+        padding-inline: 3rem;
+        padding-block: 1rem;
+        background-color: $colorPrincipal;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    
+    .item-piscina {
+        grid-area: piscina;
+        margin: 0rem;
+        padding-inline: 3rem;
+        padding-block: 1rem;
+        background-color: $colorPrincipal;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    .item-servicio:hover {
+        transform: scale(1.1);
+    }    
+}
