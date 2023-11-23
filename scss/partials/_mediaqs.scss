@@ -13,12 +13,16 @@
     }
 
     .single-rooms {
+        max-width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     .couple-rooms {
+        max-width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -50,16 +54,34 @@
         justify-content: center;
     }
     .contenedor-servicios {
-        justify-content: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-areas: 
-        "restau"
-        "casino"
-        "spa"
-        "eventos"
-        "piscina";
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
+    // .contenedor-servicios {
+    //     max-width: 100%;
+    //     justify-content: center;
+    //     grid-template-columns: 1fr;
+    //     grid-template-rows: repeat(5, 1fr);
+    //     grid-template-areas: 
+    //     "restau"
+    //     "casino"
+    //     "spa"
+    //     "eventos"
+    //     "piscina";
+    // }
+
+    .container-formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-hotel {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 580px) {

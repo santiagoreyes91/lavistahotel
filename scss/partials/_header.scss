@@ -23,10 +23,8 @@
             color: whitesmoke;
         }
 
-        .menu-container a:hover {
+        a:hover {
             color: gold;
-            transform: scale(1.5); /*por qué no anda?*/
-            transition-duration: 100ms; 
         }
 
         @keyframes aparecer-menu {
